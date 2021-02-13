@@ -106,7 +106,7 @@ def game():
             <label for="4">D4</label><br>
             <input type="radio" id="dice1" name="dice1" value="6">
             <label for="6">D6</label><br>
-            <input type="radio" id="dice1" name="dice1" value="8" cheked>
+            <input type="radio" id="dice1" name="dice1" value="8" checked>
             <label for="8">D8</label><br>
             <input type="radio" id="dice1" name="dice1" value="10">
             <label for="10">D10</label><br>
