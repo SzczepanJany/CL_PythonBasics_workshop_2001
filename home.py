@@ -3,7 +3,6 @@ from random import randint,choice
 
 app = Flask(__name__)
 DICES = ["3", "4", "6", "8", "10", "12", "20", "100"]
-
 def calculate_score(points, is_user, dice1 = 3, dice2 = 3):
     tmp_points = 0
     if is_user:
@@ -107,7 +106,7 @@ def game():
             <label for="4">D4</label><br>
             <input type="radio" id="dice1" name="dice1" value="6">
             <label for="6">D6</label><br>
-            <input type="radio" id="dice1" name="dice1" value="8" checked>
+            <input type="radio" id="dice1" name="dice1" value="8" cheked>
             <label for="8">D8</label><br>
             <input type="radio" id="dice1" name="dice1" value="10">
             <label for="10">D10</label><br>
