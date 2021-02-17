@@ -3,6 +3,9 @@ import re
 DICES = ["D3", "D4", "D6", "D8", "D10", "D12", "D20", "D100"]
 
 def throws_and_dices(is_user, type_of_throw= "D1"):
+    '''
+    Function is determinating which dice was choose
+    '''
     while True and is_user:
         type_of_throw = input("Enter type of throw: ")
         x = re.compile("(D10(0)?|D3|D4|D6|D8|D12|D20)")
@@ -15,6 +18,9 @@ def throws_and_dices(is_user, type_of_throw= "D1"):
     return (result)
 
 def calculate_score(points, is_user):
+    '''
+    Function is calulating score
+    '''
     tmp_points = 0
     tmp_points += throws_and_dices(is_user, choice(DICES))
     tmp_points += throws_and_dices(is_user, choice(DICES))
