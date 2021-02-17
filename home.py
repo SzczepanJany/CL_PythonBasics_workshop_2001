@@ -4,6 +4,9 @@ from random import randint,choice
 app = Flask(__name__)
 DICES = ["3", "4", "6", "8", "10", "12", "20", "100"]
 def calculate_score(points, is_user, dice1 = 3, dice2 = 3):
+    '''
+    Function is calulating score
+    '''
     tmp_points = 0
     if is_user:
         pass    
